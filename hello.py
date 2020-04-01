@@ -8,4 +8,4 @@ name=myname.get_name()
 
 print("hello {}".format(name))
 
-print('hello Git!')
+print('hello to  Git!')

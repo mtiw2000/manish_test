@@ -8,7 +8,7 @@ pipeline {
     options {
         buildDiscarder(
             // Only keep the 10 most recent builds
-            logRotator(numToKeepStr:'10'))
+            logRotator(numToKeepStr:'5'))
     }
     environment {
         projectName = 'ProjectTemplate'
@@ -19,13 +19,13 @@ pipeline {
 
     stages {
 
-        /*
+
         stage ('Checkout') {
             steps {
                 checkout scm
             }
         }
-        */
+        
 
         stage ('Install_Requirements') {
             steps {

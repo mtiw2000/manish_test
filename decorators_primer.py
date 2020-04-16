@@ -4,6 +4,8 @@ Created on Wed Apr 15 15:46:45 2020
 
 @author: mtiw2
 """
+from datetime import datetime
+
 
 def add_one(number):
     return number + 1
@@ -39,14 +41,6 @@ def parent():
     second_child()
 
     return (first_child)
-
-
-a=parent()
-
-a()
-
-
-
     
 def parent(num):
     def first_child():
@@ -61,12 +55,6 @@ def parent(num):
         return second_child
 
 
-first = parent(1)
-second = parent(2)
-
-second()
-    
-
 def my_decorator(func):
     def wrapper():
         print('something is happening before function is called')
@@ -75,34 +63,12 @@ def my_decorator(func):
         
     return(wrapper)
 
-
-def say_whee():
-    print("Whee!")
-    
-
-say_whee = my_decorator(say_whee)
-
-say_wee()
-
-
-
-    
+ 
 @my_decorator
 def say_wee():
     print('whee')
 
-    
 
-say_wee()
-
-
-
-from decorators import do_twice
-
-
-
-
-from datetime import datetime
 
 def not_during_the_night(func):
     def wrapper():
@@ -115,9 +81,6 @@ def not_during_the_night(func):
 def say_whee():
     print("Whee!")
 
-say_whee = not_during_the_night(say_whee)
-
-say_whee()
 
     
     

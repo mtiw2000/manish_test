@@ -56,20 +56,3 @@ def decorator(func):
     
     return wrapper_decorator
 
-return_greeting.__name__
-
-help(return_greeting)
-
- 
-hi_manish=return_greeting('manish')    
-
-print(hi_manish)
-
-    
-greet('manish') 
-
-
-print.__name__
-
-help(print) 
-
